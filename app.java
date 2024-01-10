@@ -37,29 +37,65 @@ public class App {
      ************************************************
      */
 
-    
-    static void incrementCountMapWildcard(Map<Enum<?>, Integer> map, Enum<?> key) {
+ static void incrementCountMapWildcards1(Map<Enum<?>, Integer> map, Enum<?> key) {
         map.merge(key, 1, Integer::sum);
     }
 
-   
-    static <E extends Enum<E>> void incrementCountMapGenerics(Map<E, Integer> map, E key) {
+    static <E extends Enum<E>> void incrementCountMapGenerics1(Map<Enum<E>, Integer> map, Enum<E> key) {
         map.merge(key, 1, Integer::sum);
     }
 
-  
-    static void incrementCountMapWildcard(Map<? extends Enum<?>, Integer> map, Enum<?> key) {
+    static void incrementCountMapWildcards2(Map<Enum<?>, Integer> map, Enum<?> key) {
         map.merge(key, 1, Integer::sum);
+        // Implement the method using wildcards
     }
 
-   
-    static <E extends Enum<E>> void incrementCountMapGenerics(Map<E, Integer> map, E key) {
+    static <E extends Enum<E>> void incrementCountMapGenerics2(Map<Enum<E>, Integer> map, Enum<E> key) {
         map.merge(key, 1, Integer::sum);
+        // Implement the method using type parameters
     }
 
-    // Other methods...
+    /**
+     * Implement the remaining two methods as follows:
+     */
 
-    // Part-I method remains unchanged
+    static void incrementCountMapWildcards3(Map<Enum<?>, Integer> map, Enum<?> key) {
+        map.merge(key, 1, Integer::sum);
+        // Implement the method using wildcards
+    }
 
-    // Other methods...
+    static <E extends Enum<E>> void incrementCountMapGenerics3(Map<Enum<E>, Integer> map, Enum<E> key) {
+        map.merge(key, 1, Integer::sum);
+        // Implement the method using type parameters
+    }
+
+    static void incrementCountMapWildcards4(Map<Enum<?>, Integer> map, Enum<?> key) {
+        map.merge(key, 1, Integer::sum);
+        // Implement the method using wildcards
+    }
+
+    static <E extends Enum<E>> void incrementCountMapGenerics4(Map<Enum<E>, Integer> map, Enum<E> key) {
+        map.merge(key, 1, Integer::sum);
+        // Implement the method using type parameters
+    }
+
+    /**
+     * Implement the remaining four methods as follows:
+     */
+
+    static void methodName1() {
+        // Implement the method
+    }
+
+    static void methodName2() {
+        // Implement the method
+    }
+
+    static void methodName3() {
+        // Implement the method
+    }
+
+    static void methodName4() {
+        // Implement the method
+    }
 }
